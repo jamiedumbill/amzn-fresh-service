@@ -33,6 +33,8 @@ public class Main {
                     .sendKeys(Keys.ENTER)
                     .perform();
 
+            //TODO: Use https://www.selenium.dev/documentation/webdriver/elements/locators/#tag-name to find each item matching a search
+
             logger.info("Page title is: {}", driver.getTitle());
 
         } finally {
