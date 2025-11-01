@@ -8,6 +8,7 @@ This project is a simple Java application that uses Selenium to open a Chrome br
 
 *   Java 17 or higher
 *   Apache Maven
+*   ChromeOS requires `apt install chromium-driver`
 
 ### Build
 
