@@ -1,6 +1,8 @@
 package io.github.jamiedumbill;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.Actions;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.slf4j.Logger;
@@ -23,6 +25,13 @@ public class Main {
 
         try {
             driver.get("https://www.amazon.com/fresh");
+
+            WebElement textField = driver.findElement(By.id("twotabsearchtextbox"));
+
+            new Actions(driver)
+                    .sendKeys(textField, "Potato!")
+                    .sendKeys(Keys.ENTER)
+                    .perform();
 
             logger.info("Page title is: {}", driver.getTitle());
 
