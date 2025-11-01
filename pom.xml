@@ -11,8 +11,8 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>17</maven.compiler.source>
     <maven.compiler.target>17</maven.compiler.target>
-    <grpc.version>1.60.0</grpc.version>
-    <selenium.version>4.15.0</selenium.version>
+    <grpc.version>1.75.0</grpc.version>
+    <selenium.version>4.37.0</selenium.version>
   </properties>
   <dependencies>
     <!-- Selenium/ChromeDriver -->
@@ -52,7 +52,7 @@
     <dependency>
       <groupId>ch.qos.logback</groupId>
       <artifactId>logback-classic</artifactId>
-      <version>1.4.8</version>
+      <version>1.5.20</version>
     </dependency>
   </dependencies>
 
