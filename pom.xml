@@ -11,8 +11,9 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>17</maven.compiler.source>
     <maven.compiler.target>17</maven.compiler.target>
-    <grpc.version>1.75.0</grpc.version>
-    <selenium.version>4.37.0</selenium.version>
+    <grpc.version>1.76.0</grpc.version>
+    <selenium.version>4.38.0</selenium.version>
+    <guava.version>33.5.0-jre</guava.version>
   </properties>
   <dependencies>
     <!-- Selenium/ChromeDriver -->
@@ -25,7 +26,7 @@
     <dependency>
         <groupId>com.google.guava</groupId>
         <artifactId>guava</artifactId>
-        <version>32.1.2-jre</version>
+        <version>${guava.version}</version>
     </dependency>
     <dependency>
       <groupId>io.grpc</groupId>
