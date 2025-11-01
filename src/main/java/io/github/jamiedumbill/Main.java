@@ -17,7 +17,7 @@ public class Main {
         WebDriver driver = new ChromeDriver(options);
 
         try {
-            driver.get("https://www.amazon.com");
+            driver.get("https://www.amazon.com/fresh");
 
             System.out.println("Page title is: " + driver.getTitle());
 
