@@ -8,5 +8,12 @@
     "ghcr.io/rocker-org/devcontainer-features/apt-packages:1": {
       "packages": "chromium-driver"
     },
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "vscjava.vscode-java-pack"
+      ]
+    }
   }
 }
