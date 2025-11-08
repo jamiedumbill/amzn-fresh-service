@@ -27,18 +27,18 @@ public class Main {
 
         try {
             driver.get("https://www.amazon.com/fresh");
-
+            
             WebElement textField = driver.findElement(By.id("twotabsearchtextbox"));
-
             new Actions(driver)
-                    .sendKeys(textField, "Potato!")
+                    .sendKeys(textField, "tomato!")
                     .sendKeys(Keys.ENTER)
                     .perform();
 
-            //TODO: Use https://www.selenium.dev/documentation/webdriver/elements/locators/#tag-name to find each item matching a search
-
+            WebElement searchResults = driver.findElement(By.xpath( "//span[@data-component-type='s-search-results']"));
+            //WebElement firstItem = searchResults.get ;
+            WebElement title = searchResults.findElement(By.xpath(".//span[@class='a-size-medium a-color-base a-text-normal']"));
             logger.info("Page title is: {}", driver.getTitle());
-
+            logger.info("The first item is {}", title.getText());
         } finally {
             driver.quit();
         }
